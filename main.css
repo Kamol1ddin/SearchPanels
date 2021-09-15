@@ -1,0 +1,118 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #ccc;
+}
+
+nav{
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+}   
+
+.input{
+    width: 255px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    object-fit: cover;
+    border: 1.9px solid #04f;
+    color: #04f;
+    font-size: 15px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.input::placeholder{
+    color: #04f;
+}
+
+.search{
+    width: 80px;
+    height: 30px;
+    border: 2px solid #04f;
+    background-color: #04f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.search:hover{
+    background-color: #fff;
+    color: #04f;
+    transition: all .5s;
+}
+
+.listProduct{
+    width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.cardBlock{
+    width: 90vh;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.cardItem{
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    color: #04f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 280px;
+    background-color: #fff;
+    transition: all .8s;
+    transform: translateY(100%);
+}
+
+.card:hover .cardItem{
+    transition: all 1s;
+    transform: translateY(0%);
+}
+
+.itemProduct{
+    margin: -10px 20px;
+}
